@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Northstar Outfitters</title>
+</head>
+<body>
+  <header>
+    <h1>Northstar Outfitters</h1>
+    <span>Cart: <span id="cart-count">0</span></span>
+  </header>
+  <main>
+    <section class="login">
+      <h2>Sign in</h2>
+      <form id="login-form">
+        <input aria-label="Username" placeholder="Email">
+        <input aria-label="Password" type="password" placeholder="Password">
+        <button type="submit">Sign in</button>
+      </form>
+      <p class="message"></p>
+    </section>
+    <section class="shop">
+      <h2>Shop</h2>
+      <div class="product"><h3>Canvas Backpack</h3><button>Add to cart</button></div>
+      <div class="product"><h3>Travel Mug</h3><button>Add to cart</button></div>
+      <a href="/checkout">Go to checkout</a>
+    </section>
+    <section class="checkout">
+      <h2>Checkout</h2>
+      <form id="checkout-form">
+        <input aria-label="First name" placeholder="First name">
+        <input aria-label="Last name" placeholder="Last name">
+        <button type="submit">Place order</button>
+      </form>
+      <p id="confirmation"></p>
+    </section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
